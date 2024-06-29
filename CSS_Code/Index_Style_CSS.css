@@ -5,7 +5,6 @@
     box-sizing: border-box;
 }
 
-
 body {
     font-family: KaiTi;
     line-height: 1.6;
@@ -20,6 +19,20 @@ section {
     margin-bottom: 10px;
 }
 
+.iframe-container {
+    width: 100%;
+    overflow: hidden;
+
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.iframe-container iframe {
+    width: 100%;
+    border: none;
+}
+
 .container {
     display: grid;
     grid-template-columns: 38.2% 61.8%;
@@ -27,14 +40,29 @@ section {
     margin: 0 auto;
 }
 
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: auto;
+    }
+}
+
 .personal_basic_information {
     background-color: #ffffff;
     padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 
 .personal_details {
     background-color: #ffffff;
     padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 p {
