@@ -1,42 +1,589 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>leizheng2005</title>
+    <title>Zheng Lei｜雷政</title>
     <link rel="shortcut icon" href="Images/Main_Pages/Yukki_Asuna.ico"/>
-    <link rel="stylesheet" href="CSS_Code/Index_Style_CSS.css">
+    <link rel="stylesheet" href="CSS_Code/index.css">
 </head>
 <body>
-<div class="container">
-<!--  左边分区的容器编辑-->
-<div class="personal_basic_information">
-    <h2>LeiZheng2005</h2>
-    <div class="iframe-container">
-        <iframe src="HTML_Code/Main_Pages_Code/Left_HTML_Code/basic_information.html"
-                onload="resizeIframe(this)"></iframe>
+    <nav>
+        <div class="nav-content">
+            <div class="nav-left">
+                <span lang="en">Zheng Lei</span>
+                <span lang="zh">雷政</span>
+            </div>
+            <div class="nav-right">
+                <ul class="nav-links">
+                    <li><a href="#about" onclick="openSection('about')">
+                        <span lang="en">About</span>
+                        <span lang="zh">关于</span>
+                    </a>
+                        <ul class="dropdown">
+                              <li><a href="#thanks" onclick="openSection('thanks')">
+                                  <span lang="en">Thanks</span>
+                                  <span lang="zh">致谢</span>
+                              </a></li>
+                            </ul>
+                    </li>
+                    <li><a href="#research" onclick="openSection('research')">
+                        <span lang="en">Research</span>
+                        <span lang="zh">研究</span>
+                    </a></li>
+                    <li><a href="#publications" onclick="openSection('publications')">
+                        <span lang="en">Publications</span>
+                        <span lang="zh">发表</span>
+                    </a></li>
+                    <li><a href="#bachelor" onclick="openSection('bachelor')">
+                        <span lang="en">Bachelor</span>
+                        <span lang="zh">本科</span>
+                    </a>
+                        <ul class="dropdown">
+                          <li><a href="#bachelor-student" onclick="openSection('bachelor-student')">
+                              <span lang="en">Student</span>
+                              <span lang="zh">学生工作</span>
+                          </a></li>
+                          <li><a href="#bachelor-awards" onclick="openSection('bachelor-awards')">
+                              <span lang="en">Awards</span>
+                              <span lang="zh">荣誉奖项</span>
+                          </a></li>
+                          <li><a href="#bachelor-competition" onclick="openSection('bachelor-competition')">
+                              <span lang="en">Competition</span>
+                              <span lang="zh">竞赛获奖</span>
+                          </a></li>
+                          <li><a href="#bachelor-academic" onclick="openSection('bachelor-academic')">
+                              <span lang="en">Academic</span>
+                              <span lang="zh">学术科研</span>
+                          </a></li>
+                          <li><a href="#bachelor-others" onclick="openSection('bachelor-others')">
+                              <span lang="en">Others</span>
+                              <span lang="zh">其他</span>
+                          </a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#news" onclick="openSection('news')">
+                        <span lang="en">News</span>
+                        <span lang="zh">新闻</span>
+                    </a></li>
+                    <li><a href="#contact" onclick="openSection('contact')">
+                        <span lang="en">Contact</span>
+                        <span lang="zh">联系</span>
+                    </a></li>
+                    <li><a href="#web" onclick="openSection('web')">
+                        <span lang="en">Web</span>
+                        <span lang="zh">网站</span>
+                    </a></li>
+                </ul>
+                <button class="language-btn" onclick="toggleLanguage()">中文</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="profile-image">
+                <img src="Images/Main_Pages/2023.04picture.jpg" alt="Profile">
+            </div>
+            <div class="profile-info">
+                <h1>
+                    <span lang="en">Zheng Lei</span>
+                    <span lang="zh">雷政</span>
+                </h1>
+                <p>
+                    <span lang="en">2005</span>
+                    <span lang="zh">2005</span>
+                </p>
+                <p>
+                    <span lang="en">Xi'an, China</span>
+                    <span lang="zh">西安，中国</span>
+                </p>
+                <p>
+                    <span lang="en">Shaanxi University of Science and Technology</span>
+                    <span lang="zh">陕西科技大学</span>
+                </p>
+                <p>
+                    <span lang="en">Artificial Intelligence</span>
+                    <span lang="zh">人工智能专业</span>
+                </p>
+                <p>
+                    <span lang="en">Undergraduate Student</span>
+                    <span lang="zh">本科生</span>
+                </p>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div id="about" class="section">
+                <div class="section-header" onclick="toggleSection(this)">
+                    <h2>
+                        <span lang="en">About Me</span>
+                        <span lang="zh">关于我</span>
+                    </h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="section-content">
+                    <div lang="en">
+
+                    </div>
+                    <div lang="zh">
+                      来自湖南省衡阳市一个小镇上，从农村来到大城市学习与生活。目前是大三学生，人工智能专业，在学习神经科学的路上。<br>
+                        与自己和解，接受自己是一个普通人，也相信自己可以积极面对所有挑战。成长是一段艰难的历程，需要一遍遍打破以往的观念，不断面对内心的恐惧，同时保有多种截然不同的观点。<br>
+                        谢谢一路走来，老师同学朋友师兄亲人等帮助，在迷茫无助的时候伸以援手。
+                    </div>
+
+                    <div id="thanks" class="section">
+                        <div class="section-header" onclick="toggleSection(this)">
+                            <h2>
+                                <span lang="en">Thanks</span>
+                                <span lang="zh">致谢</span>
+                            </h2>
+                                <span class="toggle-icon">▼</span>
+                        </div>
+                        <div class="section-content">
+                            <div lang="zh">首字母排序:</div>
+                            <p>An, Bai, Bai, Bai, Bai, Cao, Cao, Zeng, Cai, Chang, Chao, Chao, Chen, Chen, Chen, Chen, Cheng, Cheng, Cheng, Cui, Cui, Dai, Dai, Shan, Dan, Dang, Deng, Di, Ding, Du, Du, Du, Duan, Duan, Fan, Fan, Fan, Fang, Fang, Fang, Feng, Feng, Feng, Feng, Fu, Fu, Gao, Gao, Gao, Geng, Guan, Gui, Guo, Guo, Guo, Guo, Guo, Han, Han, He, He, Hong, Hong, Hu, Hu, Hu, Huang, Huang, Huang, Jia, Jia, Jiang, Jin, Ju, Kang, Kang, Ke, Kong, Lei, Lei, Lei, Lei, Li, Li, Li, Li, Li, Li, Li, Li, Li, Li, Li, Li, Li, Li, Li, Li, Li, Li, Li, Li, Li, Li, Li, Li, Liang, Liang, Lin, Lin, Lin, Lin, Liu, Liu, Liu, Liu, Liu, Liu, Liu, Liu, Liu, Liu, Liu, Liu, Liu, Liu, Liu, Liu, Liu, Liu, Liu, Liu, Liu, Liu, Liu, Liu, Lu, Lu, Lu, Ma, Ma, Ma, Ma, Ma, Meng, Meng, Mu, Nan, Ning, Pei, Peng, Qi, Qi, Qian, Qiao, Qiao, Qin, Qiu, Quan, Ren, Ren, Ren, Shi, Shuai, Song, Sun, Mon, Tue, Tang, Tao, Tian, Tian, Tian, Tian, Tong, Tong, Tong, Wang, Wang, Wang, Wang, Wang, Wang, Wang, Wang, Wang, Wang, Wang, Wang, Wang, Wang, Wang, Wang, Wang, Wang, Wang, Wang, Wang, Wang, Wang, Wang, Wang, Wang, Wang, Wang, Wang, Wang, Wang, Wang, Wang, Wang, Wang, Wang, Wei, Wei, Wen, Wu, Wu, Wu, Xiang, Xiang, Xiao, Xiao, Xiao, Xiao, Xiao, Xiao, Xie, Xie, Xie, Xie, Xin, Xiong, Xu, Xu, Xu, Xue, Xue, Xue, Xue, Yan, Yang, Yang, Yang, Yang, Yang, Yang, Yang, Yang, Yao, Yao, Yin, Yu, Yu, Yu, Yu, Yu, Yu, Yuan, Zhan, Zhang, Zhang, Zhang, Zhang, Zhang, Zhang, Zhang, Zhang, Zhang, Zhang, Zhang, Zhang, Zhang, Zhang, Zhang, Zhang, Zhang, Zhang, Zhang, Zhang, Zhang, Zhang, Zhang, Zhang, Zhang, Zhang, Zhang, Zhangsun, Zhao, Zhao, Zhao, Zheng, Zhou, Zhou, Zhou, Zhou</p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div id="research" class="section">
+                <div class="section-header" onclick="toggleSection(this)">
+                    <h2>
+                        <span lang="en">Research</span>
+                        <span lang="zh">研究方向</span>
+                    </h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="section-content">
+                    <div lang="en">
+                        <h3>Research interests:</h3>
+                            <ul style="padding-left: 40px;">
+                                <li>How can we <strong>most efficiently</strong> use non-invasive devices to <strong>collect</strong> and <strong>analyze</strong> EEG signals and <strong>upload</strong> the data to the cloud for <strong>synchronization</strong>?</li>
+                                <li>On this basis, how to <strong>block</strong> EEG signals from controlling the human body? </li>
+                            </ul>
+                        <h3>Main directions:</h3>
+                            <ul style="padding-left: 40px;">
+                                <li>Computational cognitive neuroscience: brain-like intelligence, brain-computer interface, neural network, etc.</li>
+                                <li>Interdisciplinary fields: neuroscience, artificial intelligence, etc.</li>
+                            </ul>
+                    </div>
+                    <div lang="zh">
+                        <h3>研究兴趣:</h3>
+                            <ul style="padding-left: 40px;">
+                                <li>如何<strong>最高效</strong>地使用<strong>非侵入式</strong>装置<strong>收集</strong>并<strong>解析</strong>脑电信号<strong>上传</strong>云端<strong>同步</strong>数据呢？</li>
+                                <li>在此基础上，如何<strong>阻隔</strong>脑电信号对人体的控制呢？</li>
+                            </ul>
+                        <h3>主要方向:</h3>
+                            <ul style="padding-left: 40px;">
+                                <li>计算认知神经科学: 类脑智能，脑机接口，神经网络等</li>
+                                <li>交叉领域: 神经科学，人工智能等</li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="publications" class="section">
+                <div class="section-header" onclick="toggleSection(this)">
+                    <h2>
+                        <span lang="en">Publications</span>
+                        <span lang="zh">发表</span>
+                    </h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="section-content">
+                    <div lang="en">This is a wilderness without knowledge...</div>
+                    <div lang="zh">暂无相关发表...</div>
+                </div>
+            </div>
+
+            <div id="bachelor" class="section">
+                <div class="section-header" onclick="toggleSection(this)">
+                    <h2>
+                        <span lang="en">Bachelor</span>
+                        <span lang="zh">本科经历</span>
+                    </h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="section-content">
+                    <div lang="en">Bachelor...</div>
+                    <div lang="zh">
+                      <div id="bachelor-student" class="section">
+                          <div class="section-header" onclick="toggleSection(this)">
+                            <h2>
+                                <span lang="zh">学生工作</span>
+                            </h2>
+                            <span class="toggle-icon">▼</span>
+                          </div>
+                          <div class="section-content">
+                                  <h3 class='zh'>2022-2023学年: </h3>
+                                      <p class='zh'>2022.09-2023.07: 电子信息类2202班班长</p>
+                                      <p class='zh'>2022.09-2023.07: 校青年志愿者服务团管理部委员
+                                          <a href="https://mp.weixin.qq.com/s/YsmHp_hQqq7CrqRQ70Pteg">
+                                              (公示地址: 管理部序号14)</a></p>
+                                      <p class='zh'>2023.05-2023.11: 陕西科技大学国际交流与合作处学生助理</p>
+                                  <h3 class='zh'>2023-2024学年:</h3>
+                                      <p class='zh'>2023.09-2024.07: 学院辅导员助理</p>
+                                      <p class='zh'>2024.03-2025.04: 首届校图书馆阅读代言人
+                                          <a href="https://mp.weixin.qq.com/s/1A1xwRbl9gWkQEmYAivg3w">
+                                              (公示地址: 电子信息与人工智能学院)</a></p>
+                                      <p class='zh'>2023.09-2024.07: 电子信息类2301班新生班级助理
+                                          <a href="https://mp.weixin.qq.com/s/Xlux-d6lwkuRdyGFofNNFg">
+                                              (公示地址: 序号1)</a></p>
+                                      <p class='zh'>2023.09-2024.07: 陕西科技大学国际交流社社长</p>
+                                      <p class='zh'>2023.09-2024.07: 黑豆计算机协会副会长</p>
+                                 <h3 class='zh'>2024-2025学年: </h3>
+                                      <p class='zh'>2024.07-2025.07: 学院辅导员助理</p>
+                                      <p class='zh'>2024.08-2025.07: 人工智能242班新生班级助理
+                                        <a href='https://mp.weixin.qq.com/s/86XQmeYCVR4HqGvnNQ4RZQ'>(公示地址)</a></p>
+                            </div>
+                          </div>
+
+                      <div id="bachelor-awards" class="section">
+                          <div class="section-header" onclick="toggleSection(this)">
+                            <h2>
+                                <span lang="zh">荣誉奖项</span>
+                            </h2>
+                            <span class="toggle-icon">▼</span>
+                          </div>
+                          <div class="section-content">
+                              <h3 class='zh'>国家级: </h3>
+                                  <p class='zh'>2023.12: 中国大学生在线悦读青春全国百佳读书达人
+                                      <a href="https://dxs.moe.gov.cn/zx/a/ds/231218/1872012.shtml">(公示名单</a>
+                                      <a href="https://univs-news-1256833609.file.myqcloud.com/123/upload/resources/file/8489833.docx">
+                                      下载地址: 序号68)</a></p>
+                              <h3 class='zh'>省部级: </h3>
+                                  <p class='zh'>2023.04: 西安华商报报道采访
+                                      <a href="http://ehsb.hspress.net/shtml/hsb/20230423/958024.shtml" target="_blank">
+                                          (原文地址)</a></p>
+                                  <p class='zh'>2023.05: 陕西省第十三届文明礼仪优秀志愿者
+                                      <a href="https://mp.weixin.qq.com/s/dPASVTtlkAvrj8drvMz8IQ">
+                                          (活动地址：考务办)</a></p>
+                                  <p class='zh'>2023.07: 上海赴外国际组织实习预备营实训证书</p>
+                              <h3 class='zh'>校级: </h3>
+                                  <p class='zh'>2023.04: 校图书馆年度阅读之星</p>
+                                  <p class='zh'>2023.04: 校官微采访
+                                      <a href="https://mp.weixin.qq.com/s/d7LERT5AejW3mXyJE8RSBQ" target="_blank">
+                                          (原文地址)</a></p>
+                                  <p class='zh'>2023.05: 优秀团员</p>
+                                  <p class='zh'>2023.06: 校青年志愿者服务团优秀委员</p>
+                                  <p class='zh'>2024.03: 校官微采访
+                                      <a href="https://mp.weixin.qq.com/s/m-RiR8QaW6mb4-wNcY9cig" target="_blank">
+                                          (原文地址)</a></p>
+                                  <p class='zh'>2024.04: 校图书馆年度阅读之星</p>
+                                  <p class='zh'>2024.05: 校阅读代言人
+                                      <a href="https://mp.weixin.qq.com/s/1A1xwRbl9gWkQEmYAivg3w" target="_blank">
+                                          (原文地址)</a></p>
+                                  <p class='zh'>2024.04: 校优秀学业奖学金一等奖
+                                      <a href="https://dianzhi.www.sust.edu.cn/info/4703/38512.htm" target="_blank">
+                                          (原文地址：序号28)</a></p>
+                                  <p class='zh'>2024.04: 校优秀学生干部奖学金
+                                      <a href="https://dianzhi.www.sust.edu.cn/info/4703/38512.htm" target="_blank">
+                                          (原文地址：序号366)</a></p>
+                                  <p class='zh'>2024.04: 校三好学生</p>
+                          </div>
+                      </div>
+
+                      <div id="bachelor-competition" class="section">
+                          <div class="section-header" onclick="toggleSection(this)">
+                            <h2>
+                                <span lang="zh">竞赛获奖</span>
+                            </h2>
+                            <span class="toggle-icon">▼</span>
+                          </div>
+                          <div class="section-content">
+                              <h3 class='zh'>国家级: </h3>
+                                  <p class='zh'>2024.06: 第十五届蓝桥杯软件赛Python组国家三等奖
+                                      <a href="https://dasai.lanqiao.cn/notices/1636">
+                                          (公示地址</a>
+                                      <a href="https://x-static.lanqiao.cn/upload/202406/courseimg/b5c3e9cc-0ec5-4a3d-a89a-0637b950423e.rar">
+                                          下载地址)</a>
+                                  </p>
+                              <h3 class='zh'>省部级: </h3>
+                                  <p class='zh'>2022.12: 全国大学生英语翻译大赛省级一等奖</p>
+                                  <p class='zh'>2023.04: 第十五届蓝桥杯软件赛C/C++组参与奖</p>
+                                  <p class='zh'>2023.06: 全国大学生英语作文大赛省级一等奖</p>
+                                  <p class='zh'>2023.11: 第十五届大学生高等数学竞赛省级参与奖</p>
+                                  <p class='zh'>2023.12: 第十四届全国周培源大学生力学竞赛(陕西赛区)三等奖</p>
+                                  <p class='zh'>2024.04: 第十五届蓝桥杯软件赛Python组省级一等奖
+                                      <a href="https://dasai.lanqiao.cn/notices/1615">
+                                          (公示地址</a>
+                                      <a href="https://x-static.lanqiao.cn/upload/202404/courseimg/2d1afdd4-e563-4394-9875-d52e1a7a3994.rar">
+                                        下载地址)</a></p>
+                                  <p class='zh'>2024.04: 团体程序设计天梯赛省级三等奖</p>
+                                  <p class='zh'>2024.06: 第十七届全国大学生计算机设计大赛省级三等奖</p>
+                                  <p class='zh'>2024.07: 第十二届全国大学生光电设计竞赛西北赛区二等奖
+                                      <a href="https://gdxbsq.moocollege.com/datacenter/news/detail?id=7932">
+                                          (公示地址</a>,
+                                      <a href="https://oss.moocollege.com/24334/edit/JNVH8OKq_1721641614293.pdf">
+                                          下载地址: 序号80)</a></p>
+                                  <p class='zh'>2024.07: 中国高校计算机大赛-大数据挑战赛
+                                      <a href="https://www.heywhale.com/org/bdc/competition/area/6662bf9a8d6c97c5d0c6bb10/leaderboard">
+                                          初赛A榜150/461</a>,
+                                      <a href="https://www.heywhale.com/org/bdc/competition/area/6662bf9a8d6c97c5d0c6bb10/leaderboard">
+                                          初赛B榜147/230</a></p>
+                              <h3 class='zh'>校级:</h3>
+                                  <p class='zh'>2023.04: 全国大学生英语竞赛初赛参与奖</p>
+                                  <p class='zh'>2023.06: 第十七届大学生高等数学竞赛校级一等奖</p>
+                                  <p class='zh'>2023.12: 毛概视频社会实践校级展示最佳创意奖</p>
+                                  <p class='zh'>2024.04: 第十四届正大杯校级优秀奖
+                                      <a href="https://jg.sust.edu.cn/info/1011/9532.htm">
+                                          (公示地址</a>,
+                                      <a href="https://jg.sust.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1685613331&wbfileid=6DAA5A2541CF06312809A622052485B1">
+                                          下载地址)</a></p>
+                                  <p class='zh'>2024.04: 第十四届三创赛校级参与奖
+                                      <a href="https://jg.sust.edu.cn/info/1011/9722.htm">
+                                          (公示地址</a>,
+                                      <a href="https://jg.sust.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1685613331&wbfileid=1AE6F6DE312A58FAF23DD6A468986566">
+                                          下载地址)</a></p>
+                                  <p class='zh'>2024.04: 第十四届复兴赛校级参与奖</p>
+                                  <p class='zh'>2024.04: 大学生创新创业院级参与奖</p>
+                                  <p class='zh'>2024.04: 全国大学生英语竞赛初赛参与奖</p>
+                          </div>
+                      </div>
+
+                      <div id="bachelor-academic" class="section">
+                          <div class="section-header" onclick="toggleSection(this)">
+                                <h2>
+                                    <span lang="zh">学术科研</span>
+                                </h2>
+                                <span class="toggle-icon">▼</span>
+                          </div>
+                          <div class="section-content">
+                              <p class='zh'>2023.10-2024.05: 陕西省人工智能联合实验室陕西科技大学实验室</p>
+                              <p class='zh'>2024.07-2024.09: 陕西科技大学水下目标检测实验室</p>
+                          </div>
+                      </div>
+
+                      <div id="bachelor-others" class="section">
+                          <div class="section-header" onclick="toggleSection(this)">
+                                <h2>
+                                    <span lang="zh">其他</span>
+                                </h2>
+                                <span class="toggle-icon">▼</span>
+                          </div>
+                          <div class="section-content">
+                              <h3 class='zh'>Skills:</h3>
+                              <p class='zh'>Code: Python,C++,Java,HTML,CSS,Shell</p>
+                              <p class='zh'>Tools: PyCharm, GitHub, PyTorch, Anaconda, Kaggle, Typora</p>
+                              <h3 class='zh'>Experience:</h3>
+                              <p class='zh'>2023.07: 上海赴外国际组织实习</p>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="news" class="section">
+                <div class="section-header" onclick="toggleSection(this)">
+                    <h2>
+                        <span lang="en">News</span>
+                        <span lang="zh">新闻</span>
+                    </h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="section-content">
+                    <div lang="en">
+                      For the English news section, just write something more important and formal...
+                    </div>
+                    <div lang="zh">
+                        <p>2024.11.01: [小事] 收到我哥的红包了，还是很开心的。</p>
+                        <p>2024.10.31: [小事] 想起七年前的不开心的事情了哈哈。</p>
+                        <p>2024.10.30: [小事] 为简单庆祝某事，吃了纸包鱼，好久没吃了。</p>
+                        <p>2024.10.29: [谢谢] 谢谢王小姐帮我注销手机号，谢谢姚老师指点。</p>
+                        <p>2024.10.28: [生日] 桂小姐法定20岁（可以结婚了哈哈），生日快乐！</p>
+                        <p>2024.10.27: [小事] 久违地吃了泡面。</p>
+                        <p>2024.10.24: [小事] 一件开心的事情哈哈。</p>
+                        <p>2024.10.23: [动漫] 桐人亚丝娜新婚快乐！</p>
+                        <p>2024.10.14: [谢谢] 谢谢姚老师指点。</p>
+                        <p>2024.10.08: [小事] 不开心，然后聊了会天哈哈。</p>
+                        <p>2024.10.04: [小事] U盘坏了，但客服说可以退90%的钱，用了一年多了。</p>
+                        <p>2024.10.02: [动漫] 刺客伍六七第五季及Re零第三季开播！</p>
+                        <p>2024.09.12: [小事] 谢谢姚老师指点。</p>
+                        <p>2024.08.29: [小事] 纪念这个暑假最后一次点蜜雪冰城柠檬水。</p>
+                        <p>2024.08.10: [小事] 突然发现相册里有张好看的夕阳照。</p>
+                        <p>2024.08.07: [电影] 和大熊看了《抓娃娃》，出门逛逛顺便看的。</p>
+                        <p>2024.08.01: [小事] 八月就别不开心了。</p>
+                        <p>2024.07.29: [小事] 依旧不开心是吧！</p>
+                        <p>2024.07.23: [小事] 咋还不开心。</p>
+                        <p>2024.07.22: [小事] 一个人去灞桥散步，当时不开心吧。</p>
+                        <p>2024.07.21: [电影] 一个人去看了《你的名字》，16年的时候都不知道怎么去电影院哈哈。</p>
+                        <p>2024.06.29: [小事] 不开心。</p>
+                        <p>2024.06.10: [节日] 去钟楼给桂小姐送点西安特产吧。</p>
+                        <p>2024.06.01: [小事] 和好朋友第一次去了西安交通大学，第一次吃纸包鱼。</p>
+                        <p>2024.05.31: [节日] 收到桂小姐的六一蛋糕，谢谢你。好久没吃蛋糕了，哈哈。第一次收到朋友送的蛋糕。</p>
+                        <p>2024.05.04: [小事] 在图书馆学习是不？</p>
+                        <p>2024.04.30: [电影] 和大熊看了《间谍过家家 代号：白》，什么时候第三季更新！。</p>
+                        <p>2024.04.23: [小事] 显示器也到了。</p>
+                        <p>2024.04.22: [小事] 主机到了，非常开心哈哈。</p>
+                        <p>2024.03.28: [小事] 不开心罢了。</p>
+                        <p>2024.03.24: [动漫] 换上Yukki的春季头像。</p>
+                        <p>2024.03.15: [动漫] 换上Yukki的秋季头像。</p>
+                        <p>2024.03.07: [小事] 不开心的日期全给你写下来了，吃饭去了下次在写。</p>
+                        <p>2024.01.22: [生日] 小雷19岁，就从这个写个时间点写起吧，以后有时间再往前写，生日快乐！</p>
+                        <p>2024.01.14: [小事] 第一次在同学家吃饭及住宿。</p>
+                        <p>2023.12.29: [小事] 不记得咋了，当时好像不开心。</p>
+                        <p>2023.11.14: [小事] 在南园吃到了美味的意面。</p>
+                        <p>2023.11.11: [小事] 人活着哪有不为肖鹿的！Again.</p>
+                        <p>2023.11.03: [聚餐] 和好朋友出门吃了铁锅炖，虽然是第一次，但是很好吃。</p>
+                        <p>2023.11.02: [小事] 咋又不开心了。</p>
+                        <p>2023.10.29: [小事] 人活着哪有不为肖鹿的！</p>
+                        <p>2023.10.23: [小事] 《裙摆与向日葵花》多多poi，好听爱听！</p>
+                        <p>2023.10.06: [旅游] 假装在广州，其实暑假去的。</p>
+                        <p>2023.08.26: [小事] 也是回到学校吃了麻辣烫。</p>
+                        <p>2023.08.23: [旅游] 外面下雨，地跌出站口免费送雨衣呜呜。</p>
+                        <p>2023.08.22: [旅游] 去广州打工。</p>
+                        <p>2023.08.12: [旅游] 去郴州打工。</p>
+                        <p>2023.07.31: [旅游] 在上海学习完了，从扬州回长沙。</p>
+                        <p>2023.07.24: [旅游] 从黄花去虹桥。</p>
+                        <p>2023.07.07: [小事] 也是第一次吃长沙臭豆腐，还买了杯茶颜悦色，还有久违的必胜客。</p>
+                        <p>2023.07.06: [小事] 放假坐高铁回长沙去了/</p>
+                        <p>2023.07.05: [聚餐] 明天放假了，所以今天和好朋友吃了烧烤。</p>
+                        <p>2023.06.07: [小事] 有些焦虑哈哈</p>
+                        <p>2023.05.27: [电影] 和张公子去看了刀剑神域进击篇黯淡黄昏的诙谐曲，什么时候下一部剧场版啊呜呜呜。第一次和同学一起看电影。</p>
+                        <p>2023.05.14: [小事] 学校的菠萝巨好吃。</p>
+                        <p>2023.05.07: [聚餐] 和好朋友出门吃了纸包鸡，也是第一次，很好吃。</p>
+                        <p>2023.04.29: [小事] 第一次和同学出门，去了大唐不夜城。</p>
+                        <p>2023.04.01: [小事] 想起四年前开心的事情。</p>
+                        <p>2023.03.15: [小事] 想起三年前不开心的事情。</p>
+                        <p>2023.02.18: [生日] 大熊和大家一起过生日，生日快乐。</p>
+                        <p>2023.02.13: [聚餐] 和我哥出门吃饭了。</p>
+                        <p>2023.02.11: [小事] 拉黑了某人，望不周知。虽然现在以及移出去了。</p>
+                        <p>2023.01.03: [生日] 在家过了18岁生日。</p>
+                        <p>2023.12.16: [小事] 貌似发烧了。</p>
+                        <p>2023.12.13: [小事] 没事别写信，不周知。</p>
+                        <p>2022.12.12: [动漫] 人活着哪有不为了虹夏的！</p>
+                        <p>2022.11.28: [聚餐] 串串火锅好吃，第一次和同学聚餐。</p>
+                        <p>2022.11.27: [小事] 第一次和同学打语音电话，虽然是曾经的同学了，也不算朋友。</p>
+                        <p>2022.11.19: [小事] 有些不开心对不对。</p>
+                        <p>2022.11.18: [生日] 璇和大家一起过生日，生日快乐。第一次和同学一起过生日。</p>
+                        <p>2022.11.04: [小事] 在图书馆拍了个照片。</p>
+                        <p>2022.10.09: [小事] 第一次和同学一起听辩论赛。</p>
+                        <p>2022.09.18: [小事] 大学开学了。</p>
+                        <p>2022.08.03: [小事] 第一次一个人去湖南省图书馆。</p>
+                        <p>2022.07.23: [小事] 第一次和我哥在胡桃里吃饭。</p>
+                        <p>2022.07.08: [电影] 关于我哥十年前送我的笔记本还能开机并看《你的名字》这件事！</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contact" class="section">
+                  <div class="section-header" onclick="toggleSection(this)">
+                      <h2>
+                          <span lang="en">Contact</span>
+                          <span lang="zh">联系方式</span>
+                      </h2>
+                      <span class="toggle-icon">▼</span>
+                  </div>
+                  <div class="section-content">
+                      <div lang="en">
+                        <p>Wechat: leizheng1826</p>
+                        <p>Email: leizheng2005@gmail.com</p>
+                        <p>Address: Student Living Area of Shaanxi University of Science and Technology, Weiyanghu Street, Weiyang District, Xi'an, Shaanxi Province, China, 710021</p>
+                      </div>
+                      <div lang="zh">
+                        <p>微信: leizheng1826</p>
+                        <p>邮箱: leizheng2005@gmail.com</p>
+                        <p>地点: 中国陕西省西安市未央区未央湖街道陕西科技大学学生生活区，710021</p>
+                      </div>
+                  </div>
+              </div>
+
+            <div id="web" class="section">
+                  <div class="section-header" onclick="toggleSection(this)">
+                      <h2>
+                          <span lang="en">Websites</span>
+                          <span lang="zh">相关网站</span>
+                      </h2>
+                      <span class="toggle-icon">▼</span>
+                  </div>
+                  <div class="section-content">
+                    <p>
+                      <span lang="zh">相关网站:</span>
+                      <span lang="en">Websites:</span>
+                    </p>
+                      <p>
+                      <a href="https://orcid.org/0009-0003-5303-1855" target="_blank">
+                          <img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" alt="ORCID Logo" style="width: 20px; height: 20px;"></a>
+                      <a href="https://github.com/LeiZheng2005" target="_blank">
+                          <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo" style="width: 20px; height: 20px;"></a>
+                      <a href="https://www.luogu.com.cn/user/1193345" target="_blank">
+                          <img src="https://www.luogu.com.cn/favicon.ico" alt="Luogu Logo" style="width: 20px; height: 20px;"></a>
+                      <a href="https://www.zhihu.com/people/leizheng2005" target="_blank">
+                          <img src="https://static.zhihu.com/heifetz/favicon.ico" alt="Zhihu Logo" style="width: 20px; height: 20px;"></a>
+                      <a href="https://space.bilibili.com/3493282034223793" target="_blank">
+                          <img src="https://www.bilibili.com/favicon.ico" alt="Bilibili Logo" style="width: 20px; height: 20px;"></a>
+                      <br></p>
+                    <p>
+                      <span lang="zh">相关标签:</span>
+                      <span lang="en">Tags:</span>
+                    </p>
+                      <a href="https://wakatime.com/@0840e613-b8b1-4a2d-8adb-8d847e8ff7ed">
+                          <img src="https://wakatime.com/badge/user/0840e613-b8b1-4a2d-8adb-8d847e8ff7ed.svg"
+                               alt="Total time coded since Jun 28 2024" /></a><br>
+                    <p>
+                      <span lang="zh">版本:</span>
+                      <span lang="en">Versions:</span>
+                    </p>
+                      <ul style="padding-left: 40px;">
+                          <li><a href="Version/Version1-0">Version1-0</a></li>
+                          <li><a href="Version/Version1-1">Version1-1</a></li>
+                      </ul>
+
+                          <script type='text/javascript' id='clustrmaps'
+                              src='//cdn.clustrmaps.com/map_v2.js?cl=080808&w=300&t=tt&d=D4ibkrZmxgXfriWMNlGcuMU4RNKESv1nEuWPEFqx2_s&co=ffffff&cmo=3acc3a&cmn=ff5353&ct=000000'>
+                          </script>
+                    <section id="tracker">
+                    <a href="https://www.easycounter.com/">
+                        <img src="https://www.easycounter.com/counter.php?leizheng2005"
+                         alt="page counter"></a> <br>
+                    </section>
+
+              </div>
+
+        </div>
     </div>
-</div>
-
-<!--  右边分区的容器编辑-->
-<div class="personal_details">
-    <h2 style="text-align: center">---本科---</h2>
-    <!-- 学生工作，荣誉奖项，竞赛获奖，学术科研，其他经历 -->
-    <div class="iframe-container">
-        <iframe src="HTML_Code/Main_Pages_Code/Right_HTML_Code/Bachelor_HTML_Code/Bachelor_Main.html"
-             onload="resizeIframe(this)" ></iframe>
     </div>
-</div>
-</div>
+    <script>
+        function toggleSection(header) {
+            const content = header.nextElementSibling;
+            header.classList.toggle('active');
+            content.classList.toggle('active');
+        }
+        function openSection(id) {
+            const section = document.getElementById(id);
+            const header = section.querySelector('.section-header');
+            const content = section.querySelector('.section-content');
 
-<footer>
-    <p>&copy; 2024 Zheng Lei(雷政)</p>
-</footer>
-<script>
-    function resizeIframe(obj) {
-        obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
-    }
-</script>
+            // 打开对应的section
+            header.classList.add('active');
+            content.classList.add('active');
+        }
 
+        function toggleLanguage() {
+            const langBtn = document.querySelector('.language-btn');
+            const isEnglish = document.documentElement.lang === 'en';
+
+            document.documentElement.lang = isEnglish ? 'zh' : 'en';
+
+            const enElements = document.querySelectorAll('[lang="en"]');
+            const zhElements = document.querySelectorAll('[lang="zh"]');
+
+            enElements.forEach(el => el.style.display = isEnglish ? 'none' : 'block');
+            zhElements.forEach(el => el.style.display = isEnglish ? 'block' : 'none');
+
+            // 对于内联元素特殊处理
+            document.querySelectorAll('span[lang]').forEach(el => {
+                el.style.display = el.getAttribute('lang') === document.documentElement.lang ? 'inline' : 'none';
+            });
+
+            langBtn.textContent = isEnglish ? 'English' : '中文';
+        }
+    </script>
 </body>
 </html>
