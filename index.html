@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zheng Lei｜雷政</title>
     <link rel="shortcut icon" href="images/Yukki.ico"/>
-    <link rel="stylesheet" href="CSS_Code/index.css">
+    <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
     <nav>
         <div class="nav-content">
             <div class="nav-left">
-                <span lang="en">Zheng Lei</span>
-                <span lang="zh">雷政</span>
+                <span lang="en">Zheng Lei | 雷政</span>
+                <span lang="zh">雷政 | Zheng Lei</span>
             </div>
             <div class="nav-right">
                 <ul class="nav-links">
@@ -80,6 +82,8 @@
         </div>
     </nav>
 
+
+
     <div class="main-container">
         <!-- Sidebar -->
         <div class="sidebar">
@@ -116,6 +120,8 @@
 
         <!-- Main Content -->
         <div class="main-content">
+
+<!--        section header-->
             <div id="about" class="section">
                 <div class="section-header" onclick="toggleSection(this)">
                     <h2>
@@ -152,6 +158,7 @@
                 </div>
             </div>
 
+<!--            research-->
             <div id="research" class="section">
                 <div class="section-header" onclick="toggleSection(this)">
                     <h2>
@@ -184,6 +191,7 @@
                 </div>
             </div>
 
+<!--            publications-->
             <div id="publications" class="section">
                 <div class="section-header" onclick="toggleSection(this)">
                     <h2>
@@ -198,6 +206,7 @@
                 </div>
             </div>
 
+<!--            bachelor-->
             <div id="bachelor" class="section">
                 <div class="section-header" onclick="toggleSection(this)">
                     <h2>
@@ -377,6 +386,7 @@
                 </div>
             </div>
 
+<!--            news-->
             <div id="news" class="section">
                 <div class="section-header" onclick="toggleSection(this)">
                     <h2>
@@ -395,6 +405,7 @@
                 </div>
             </div>
 
+<!--            contact-->
             <div id="contact" class="section">
                   <div class="section-header" onclick="toggleSection(this)">
                       <h2>
@@ -417,6 +428,7 @@
                   </div>
               </div>
 
+<!--            web-->
             <div id="web" class="section">
                   <div class="section-header" onclick="toggleSection(this)">
                       <h2>
@@ -443,10 +455,7 @@
                       
                       <a href="https://github.com/LeiZheng2005" target="_blank">
                           <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo" style="width: 20px; height: 20px;"></a>
-                      
-                      <a href="https://www.luogu.com.cn/user/1193345" target="_blank">
-                          <img src="https://www.luogu.com.cn/favicon.ico" alt="Luogu Logo" style="width: 20px; height: 20px;"></a>
-                      
+
                       <a href="https://www.zhihu.com/people/leizheng2005" target="_blank">
                           <img src="https://static.zhihu.com/heifetz/favicon.ico" alt="Zhihu Logo" style="width: 20px; height: 20px;"></a>
                       
@@ -479,7 +488,8 @@
     </div>
     </div>
 
-    
+
+<!--    script-->
     <script>
         function toggleSection(header) {
             const content = header.nextElementSibling;
@@ -491,7 +501,6 @@
             const header = section.querySelector('.section-header');
             const content = section.querySelector('.section-content');
 
-            // 打开对应的section
             header.classList.add('active');
             content.classList.add('active');
         }
@@ -508,7 +517,6 @@
             enElements.forEach(el => el.style.display = isEnglish ? 'none' : 'block');
             zhElements.forEach(el => el.style.display = isEnglish ? 'block' : 'none');
 
-            // 对于内联元素特殊处理
             document.querySelectorAll('span[lang]').forEach(el => {
                 el.style.display = el.getAttribute('lang') === document.documentElement.lang ? 'inline' : 'none';
             });
