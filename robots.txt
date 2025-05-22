@@ -1,2 +1,5 @@
 User-agent: Googlebot
 Disallow: /pdfs/
+
+User-agent: *
+Disallow: /pdfs/
