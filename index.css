@@ -148,6 +148,10 @@
             display: block;
         }
 
+        .section-header.active + .section-content {
+            display: block;
+        }
+
         .toggle-icon {
             transition: transform 0.3s;
         }
